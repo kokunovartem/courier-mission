@@ -70,7 +70,7 @@ $(function () {
                                 '<td>'+request['travel_time']+'</td>\n' +
                                 '<td>'+request['arrival_dt']+'</td>\n' +
                                 '<td>'+request['time_relax']+'</td>\n' +
-                                '<td>'+request['busy_until']+'</td>\n' +
+                                '<td>Будет занят до: '+request['busy_until']+'</td>\n' +
                                 '\n' +
                             '</tr>';
                 $($('.missions-table tr')[1]).before(append);//Добавляем полученную поездку в таблицу
