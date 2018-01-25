@@ -38,8 +38,13 @@ class FrontController implements IController
                     $values[] = $splits[$i];
                 }
             }
+            if (count($keys) == count(($values))) {
+                $this->_params = array_combine($keys, $values);
+            } else {
+                $this->_params = '';
+            }
 
-            $this->_params = array_combine($keys, $values);
+
         }
 
     }

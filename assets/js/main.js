@@ -61,7 +61,6 @@ $(function () {
     $('#travel_create_form form').submit(function (e) {
         e.preventDefault();
         $.post($(this).attr('action'), $(this).serialize(), function (request) {
-            console.log(request);
             if(request) {
                var append = '<tr class="new">\n' +
                                 '<td>'+request['id']+'</td>\n' +
